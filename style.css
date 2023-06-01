@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+  font-size: 32px;
+  padding: 12px 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #333;
+  animation: rainbow 5s linear infinite;
+  background-color: white;
+  border-radius: 4px;
+}
+
+
+input[type="password"] {
+  padding: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 16px;
+  max-width: 200px;
+}
+
+
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+
+.error {
+  padding: 12px 24px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+
+  14% {
+    color: orange;
+  }
+
+  28% {
+    color: yellow;
+  }
+
+  42% {
+    color: green;
+  }
+
+  57% {
+    color: blue;
+  }
+
+  71% {
+    color: indigo;
+  }
+
+  85% {
+    color: violet;
+  }
+
+  100% {
+    color: red;
+  }
+}
